@@ -8,7 +8,11 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
+                  @if(Auth::guest())
                     You are logged in!
+                  @else
+                    Please Log in first
+                  @endif
                 </div>
             </div>
         </div>

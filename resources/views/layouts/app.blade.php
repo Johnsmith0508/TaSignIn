@@ -23,6 +23,10 @@
         .fa-btn {
             margin-right: 6px;
         }
+      
+      #map {
+        height: 100%;
+      }
     </style>
 </head>
 <body id="app-layout">
@@ -63,6 +67,7 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/profile') }}"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
                         </li>
