@@ -154,6 +154,7 @@ return [
          * Package Service Providers...
          */
         Collective\Html\HtmlServiceProvider::class,
+        PragmaRX\Google2FA\Vendor\Laravel\ServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -162,6 +163,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+  
 
     ],
 
@@ -211,6 +213,7 @@ return [
   
         'Form'=> Collective\Html\FormFacade::class,
         'HTML'=> Collective\Html\HtmlFacade::class,
+        'Google2FA' => PragmaRX\Google2FA\Vendor\Laravel\Facade::class,
 
     ],
 

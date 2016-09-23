@@ -12,6 +12,14 @@ Route::get('/', function () {
 Route::get('/profile', ['middleware'=>'auth',function() {
   return View('profile');
 }]);
-
+Route::get('/submitRoute',['middleware'=>'auth',function(){
+  return View('submitRoute');
+}]);
+Route::get('/signout',function(){
+  return View('signout');
+});
+Route::post('/signout',function(){
+  return View('signout');
+})->middleware('Signout');
 Route::auth();
 Route::get('/home', 'HomeController@index');

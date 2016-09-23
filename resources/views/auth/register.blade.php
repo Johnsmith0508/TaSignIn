@@ -52,7 +52,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+                        <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}" >
                             <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
 
                             <div class="col-md-6">
@@ -65,7 +65,7 @@
                                 @endif
                             </div>
                         </div>
-
+                          <input id="tfa-key" type="text" name="tfa_key" value="{{Google2FA::generateSecretKey()}}" hidden>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">

@@ -8,7 +8,9 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "5.*",
-        "guzzlehttp/guzzle": "~5.3|~6.0"
+        "guzzlehttp/guzzle": "~5.3|~6.0",
+        "pragmarx/google2fa": "^1.0",
+        "bacon/bacon-qr-code": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
