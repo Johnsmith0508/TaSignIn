@@ -31,3 +31,8 @@ class Signout
       return $next($request);
     }
 }
+//DB::raw('UPDATE studentTimeTable a INNER JOIN ( SELECT studentID, MAX(timeOut) max_time FROM studentTimeTable GROUP BY studentID) b ON a.studentID = b.studentID WHERE a.studentID = "78" AND timeOut = max_time SET timeIn = ' . new \DateTime->getTimestamp() . ';'
+        #UPDATE studentTimeTable a INNER JOIN ( SELECT studentID, MAX(timeOut) max_time FROM studentTimeTable GROUP BY studentID) b ON a.studentID = b.studentID WHERE a.studentID = '78' AND timeOut = max_time SET;    
+//db->query("SELECT * FROM table WHERE name ='%1'" , $name);
+/*asd*/
+//DB::table("studentTimeTable")->where("studentId", "=", $request->stuNbr)->

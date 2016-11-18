@@ -11,7 +11,7 @@
                             <label for="stuNbr" class="col-md-4 control-label">Student Number</label>
 
                             <div class="col-md-6">
-                                <input id="stuNbr" type="number" class="form-control" name="stuNbr" value="{{ old('email') }}">
+                                <input id="stuNbr" type="text" pattern="[0-9]*" inputmode="numeric" class="form-control" name="stuNbr" value="{{ old('stuNbr') }}" title="Please Enter a Valid Student Number"/>
 
                                 @if ($errors->has('stuNbr'))
                                     <span class="help-block">

@@ -16,6 +16,7 @@ class CreateStudentTimeTable extends Migration
           $table->integer('studentID');
           $table->integer('timeOut');
           $table->integer('timeIn');
+          $table->boolean('unconfirmed');
         });
     }
 
@@ -26,6 +27,6 @@ class CreateStudentTimeTable extends Migration
      */
     public function down()
     {
-        Schema::drop("studentTimes");
+        Schema::drop("studentTimeTable");
     }
 }
