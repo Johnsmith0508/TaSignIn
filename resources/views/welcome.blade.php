@@ -7,7 +7,8 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Welcome</div>
                 <div class="panel-body">
-                    Your Application's Landing Page.
+                    Welcome to the Middleton TA login page. If you are a student, please select the <code>Sign Out</code> or <code>Sign In</code> buttons.
+                    If you are a teacher wanting to view your TA's Status, please login first.
                 </div>
             </div>
         </div>
